@@ -1,0 +1,7 @@
+MODULO 2 - GIT
+
+En el ejercicio 1 se piede clonar el repositorio de desafios:
+	git clone https://github.com/daroqp/bootcamp-java-desafios.git
+
+En el ejercicio 2 nos pide hacer un fork del repositorio de NestJS:
+	repo: https://github.com/daroqp/nest
