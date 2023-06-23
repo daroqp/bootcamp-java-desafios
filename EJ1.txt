@@ -1,0 +1,21 @@
+Ejercicio 1
+
+Desde el branch custom-navbar pausamos los archivos mediante git stash que los almacena temporalmente
+    git stash --include-untracked
+
+Nos movemos al branch master
+    git checkout master
+
+Dentro de master elimininamos el archivo status.js
+    rm status.js
+
+Ahora guardamos, commiteamos y pusheamos a remoto los cambios
+    git add .
+    git commit -m "fix: remove status.js"
+    git push
+
+Volvemos al branch en el cual estabamos trabajando
+    git checkout custom-navbar
+
+Traemos los archivos guardados temporalmente y seguimos trabajando
+    git stash pop
