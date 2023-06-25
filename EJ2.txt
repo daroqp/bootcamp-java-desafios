@@ -1,0 +1,41 @@
+Ejercicio 2
+
+¿Cómo podrías subir los cambios a producción si es la rama master la que se usa para producción?
+
+Esto depende del grado de permisos que tengamos:
+    1 - Con permisos:
+        Primero veamos en que branch estamos
+            git branch -a
+        
+        Si estamos en un branch diferente a master nos movemos a ella, sino nos salteamos este paso
+            git checkout master
+
+        Una vez bien posicionados mergeamos con front-react
+            git merge front-react
+
+        En estos momentos esta el cambio solo local tendremos que subir los cambios al remoto
+            git push
+        
+    
+    2 - Sin permisos:
+        Primero veamos en que branch estamos
+            git branch -a
+
+        Si estamos en un branch diferente a front-react nos movemos a ella, sino nos salteamos este paso
+            git checkout front-react
+
+        Ahora pusheamos el commit al repositorio remoto
+            git push -u origin front-react
+
+        En la terminal nos aparecera una url donde podemos crear el pull request, algo como esto
+            ...
+            remote:
+            remote: Create a pull request for 'front-react' on Github by visiting:
+            remote:     https://github.com/daroqp/bootcamp-java-desafios/pull/new/front-react
+            remote:
+            ...
+        
+        Visitando la url vamos a generar como una peticion para mergear los branchs, esta peticion va a
+        ser analizada por un dev que tenga los permisos necesarios para hacer la fusion, en estos momentos
+        hay que tener paciencia hasta que se acepte el pull request. 
+
