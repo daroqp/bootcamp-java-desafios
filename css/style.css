@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;1,700&family=MuseoModerno:wght@700&display=swap');
+
+:root {
+    /* fuentes */
+    --fuente-enunciados: 'MuseoModerno', cursive;
+    --fuente-general: 'Asap', sans-serif;
+    
+    /* colores */
+    --color-enunciados: #0a2ff1;
+    --color-general: #04146c;
+    --color-fondo: #edf7ff;
+    --color-hastag: #8a9af1;
+
+    /* dimensiones */
+    --dim-enunciado: 117px;
+    --dim-hastag: 198px;
+    --dim-subtitle: 52px;
+    --dim-parrafo: 33px;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: var(--color-fondo);
+}
+
+main {
+    margin-left: 5vw;
+    margin-right: 49vw;
+}
+
+h1 {
+    font-family: var(--fuente-enunciados);
+    color: var(--color-enunciados);
+    font-size: var(--dim-enunciado);
+}
+
+.subtitulo {
+    font-family: var(--fuente-general);
+    font-size: var(--dim-subtitle);
+    color: var(--color-enunciados);
+    margin-bottom: 10vh;
+}
+
+p {
+    color: var(--color-general);
+    font-size: var(--dim-parrafo);
+    font-family: var(--fuente-general);
+    display: block;
+    margin: 5vh 0;
+}
+
+.lista {
+    font-family: var(--fuente-enunciados);
+    font-size: var(--dim-subtitle);
+    color: var(--color-enunciados);
+    margin-top: 10vh;
+}
+
+li {
+    font-family: var(--fuente-general);
+    color: var(--color-general);
+    font-size: var(--dim-parrafo);
+    margin: 2vh 0;
+}
+
+footer {
+    font-family: var(--fuente-enunciados);
+    font-size: var(--dim-hastag);
+    color: var(--color-hastag);
+}
