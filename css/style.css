@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+:root {
+    --fuente-princiapl: 'Poppins', sans-serif; 
+
+    --color-principal: #0a2ff1;
+    --color-fondo: #3ffff3;
+
+    --fuente-dim-h1: 78px;
+    --fuente-dim-p: 30px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    font-family: var(--fuente-princiapl);
+    padding-left: 5vw;
+    width: 45vw;
+}   
+
+main h1 {
+    color: var(--color-principal);
+    font-size: var(--fuente-dim-h1);
+    font-weight: 700;
+}
+
+main h1 span {
+    background-color: var(--color-fondo);
+}
+
+main p {
+    color: var(--color-principal);
+    font-size: var(--fuente-dim-p);
+    font-weight: 500;
+    padding-top: 4vh;
+}
+
+.container {
+    background-image: url(../assets/EJ1/fondo.JPG);
+    background-size: contain;
+    height: 62vh;
+    width: 20vw;
+}
+
+.container img {
+    width: 100%;
+}
