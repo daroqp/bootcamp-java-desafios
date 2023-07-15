@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap');
+
+:root {
+    --fuente-principal: 'Mulish', sans-serif;
+
+    /* color */
+    --color-principal: #04146c;
+    --color-borde-input: #414166;
+    --color-fondo-boton-p: #0a2ff1;
+
+    /* dimensiones */
+    --dim-titulo: 24px;
+    --dim-inputs-p: 18px;
+    --dim-boton: 20px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--fuente-principal);
+}
+
+.container {
+    border: 1px solid var(--color-borde-input);
+    margin: auto;
+    margin-top: 40px;
+    width: 600px;
+}
+
+.formulario {
+    width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+.formulario h2 {
+    color: var(--color-principal);
+    font-size: var(--dim-titulo);
+    font-weight: 700;
+    margin: 20px;
+}
+
+.formulario input {
+    font-size: var(--dim-inputs-p);
+    color: var(--color-borde-input);
+    font-weight: 400;
+    width: 500px;
+    height: 50px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.formulario .btn {
+    margin-bottom: 10px;
+    padding: 10px;
+    height: 50px;
+    background-color: var(--color-fondo-boton-p);
+    font-size: var(--dim-boton);
+    font-weight: 600;
+    color: white;
+    width: 500px;
+} 
+
+.formulario p {
+    font-size: var(--dim-inputs-p);
+    font-weight: 400;
+    color: var(--color-fondo-boton-p);
+    margin: 20px;
+}
