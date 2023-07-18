@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap');
+
+:root {
+    --fuente-principal: 'Mulish', sans-serif;
+
+    /* dimensiones */
+    --dim-titulo: 32px;
+    --dim-inputs: 22px;
+
+    /* colors */
+    --color-titulo: #04146c;
+    --color-inputs: #414166;
+    --color-fondo-boton: #15163d;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--fuente-principal);
+}
+
+body {
+    background-image: url('/assets/EJ1/M4-desafio1-fondo.png');
+}
+
+
+.container {
+    width: 50%;
+    height: 500px;
+    margin: auto;
+    background-image: url('/assets/EJ1/M4-desafio1-fondo-form.png');
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+form {
+    width: 600px;
+    height: 400px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: white;
+}
+
+
+h1 {
+    font-size: var(--dim-titulo);
+    color: var(--color-titulo);
+    font-weight: 700;
+    margin: 10px;
+}
+
+input {
+    font-size: var(--dim-inputs);
+    color: var(--color-inputs);
+    font-weight: 400;
+    width: 500px;
+    margin: 5px;
+    padding: 5px;
+}
+
+button {
+    background-color: var(--color-fondo-boton);
+    font-size: var(--dim-inputs);
+    font-weight: 600;
+    color: white;
+    width: 500px;
+    margin: 10px;
+    cursor: pointer;
+}

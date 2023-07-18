@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --fuente-titulo: 'Roboto Slab', serif;
+    --fuente-general: 'Roboto', sans-serif;
+
+    /* colors */
+    --color-title: #0a2ff1;
+    --color-parrafo: #000000;
+    --color-fondo-boton: #0a2ff1;
+    --color-fondo-linea: #15163d;
+
+    /* dimensiones */
+    --dim-titulo: 58px;
+    --dim-parrafo: 25px;
+    --dim-parrafo-2: 24px;
+    --dim-boton: 26px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+}
+
+header {
+    height: 52rem;
+    background-image: url('/assets/EJ3/M4\ -\ Desafío3_img-header.png');
+    background-size: contain;
+}
+
+h1 {
+    font-family: var(--fuente-titulo);
+    color: var(--color-title);
+    font-size: var(--dim-titulo);
+    font-weight: 700;
+    margin: 30px;
+}
+
+.container {
+    width: 80%;
+    padding: 10px;
+    font-family: var(--fuente-general);
+    margin: auto;
+}
+
+.container p {
+    font-size: var(--dim-parrafo);
+    font-weight: 400;
+    color: var(--color-parrafo);
+    margin-bottom: 30px;
+}
+
+.container  {
+    font-size: var(--dim-parrafo);
+    font-weight: 700;
+    color: var(--color-title);
+}
+
+.container img {
+    width: 80%;
+}
+
+.label-btn {
+    font-size: var(--dim-parrafo-2);
+    font-weight: 400;
+    color: #000000;
+    margin-top: 30px;
+}
+
+.container button {
+    font-weight: 400;
+    font-size: var(--dim-boton);
+    background-color: var(--color-fondo-boton);
+    color: #ffffffff;
+    width: 300px;
+    height: 50px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    height: 20px;
+    background-color: var(--color-fondo-linea);
+}
