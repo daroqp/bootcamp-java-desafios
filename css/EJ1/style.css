@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'Coolvetica';
+    src: url('/assets/EJ1/coolvetica\ rg.otf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/assets/EJ1/Roboto-Light.ttf');
+    font-weight: 300;
+}
+
+:root {
+    --color-titulo: #0a2ff1;
+    --color-parrafo: #04146c;
+    --color-boton-fondo: #0a2ff1;
+    --color-boton: #04146c;
+
+    --dim-titulo: 120px;
+    --dim-general: 40px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    text-align: center;
+}
+
+.titulo {
+    font-family: 'Coolvetica';
+    font-size: var(--dim-titulo);
+    color: var(--color-titulo);
+    margin: 30px;
+}
+
+.parrafo {
+    font-family: 'Roboto';
+    font-size: var(--dim-general);
+    color: var(--color-parrafo);
+    margin-bottom: 30px;    
+}
+
+.btn {
+    font-family: 'Roboto';
+    font-size: var(--dim-general);
+    font-weight: 400;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    width: 40%;
+}
+
+.btn-1 {
+    color: white;
+    background-color: var(--color-boton-fondo);
+    border: 3px solid var(--color-boton-fondo);
+}
+
+.btn-2 {
+    color: var(--color-boton);
+    background-color: white;
+    border: 3px solid var(--color-boton);
+}

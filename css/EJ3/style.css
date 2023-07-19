@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap');
+
+@font-face {
+    font-family: 'Coolvetica';
+    src: url('/assets/EJ3/coolvetica\ rg.otf');
+    font-weight: 400;
+}
+
+:root {
+    --fuente-titulo: 'Coolvetica';
+    --fuente-general: 'Roboto', sans-serif;
+
+    --color-titulo: #0a2ff1;
+    --color-general: #04146c;
+    --color-fondo: #eff2ff;
+
+    --dim-titulo: 120px;
+    --dim-parrafo: 40px;
+    --dim-item: 24px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.titulo {
+    font-family: var(--fuente-titulo);
+    font-size: var(--dim-titulo);
+    color: var(--color-titulo);
+    margin: 20px 0 20px 100px;
+}
+
+.parrafo {
+    font-family: var(--fuente-general);
+    font-weight: 300;
+    font-size: var(--dim-parrafo);
+    color: var(--color-general);
+    margin: 20px 0 40px 110px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.item {
+    font-family: var(--fuente-general);
+    background-color: var(--color-fondo);
+    width: 25%;
+    padding: 1e;
+}
+
+.item img {
+    width: 30%;
+    margin: 20px 0 20px 20px;
+}
+
+.item span {
+    display: block;
+    font-weight: 300;
+    font-style: italic;
+    font-size: var(--dim-item);
+    color: var(--color-general);
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.item h3 {
+    font-weight: 900;
+    font-size: var(--dim-item);
+    color: var(--color-general);
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.item p {
+    font-weight: 400;
+    font-size: var(--dim-item);
+    color: var(--color-general);
+    margin-bottom: 30px;
+    margin-left: 20px;
+}

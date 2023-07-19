@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+    --fuente-principal: 'Roboto', sans-serif;
+
+    --dim-titulo: 64px;
+    --dim-parrafo: 32px;
+    --dim-puntuacion: 16px;
+
+    --color-titulo: #0a2ff1;
+    --color-general: #04146c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+    gap: 3rem;
+}
+
+.img-container img {
+    width: 80%;
+}
+
+.container {
+    font-family: var(--fuente-principal);
+}
+
+.titulo {
+    font-weight: 700;
+    font-size: var(--dim-titulo);
+    color: var(--color-titulo);
+}
+
+.parrafo {
+    font-weight: 300;
+    font-size: var(--dim-parrafo);
+    color: var(--color-general);
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.opinion-container img {
+    width: 46%;
+}
+.opinion-container p {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: var(--dim-puntuacion);
+    color: var(--color-general);
+}
