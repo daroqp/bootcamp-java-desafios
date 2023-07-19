@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --fuente-principal: 'Roboto', sans-serif;
+    --fuente-titulo: 'Roboto Slab', serif;
+
+    --color-principal: #04146c;
+    --color-titulo: #0a2ff1;
+
+    --dim-nav: 24px;
+    --dim-titulo: 96px;
+    --dim-parrafo: 34px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--fuente-principal);
+}
+
+main {
+    padding-top: 1%;
+    height: 100vh;
+    background-color: #3b5af3;
+}
+
+.nav-container {
+    height: 15%;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    background-color: white;
+}
+
+#logo {
+    width:5%;
+    margin-left: 20px;
+}
+
+.nav-container a {
+    font-weight: 400;
+    font-size: var(--dim-nav);
+    color: var(--color-principal);
+    text-decoration: none;
+}
+
+.container {
+    height: 20%;
+    background-color: white;
+    text-align: center;
+}
+
+.container h1 {
+    font-family: var(--color-titulo);
+    font-weight: 700;
+    font-size: var(--dim-titulo);
+    color: var(--color-titulo);
+}
+
+.container p {
+    font-family: var(--dim-parrafo);
+    font-weight: 400;
+    font-size: var(--dim-parrafo);
+    color: var(--color-principal);
+}
+
+.fondo {
+    height: 70%;
+    background-image: url('/assets/EJ1/M5-Desafío1-img.png');
+    background-color: black;
+    background-size: cover;
+    width: 100%;
+}

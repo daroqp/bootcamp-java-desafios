@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="./css/EJ2/style.css">
+</head>
+<body>
+    <main>
+        <form class="formulario">
+            <div class="nav-container">
+                <img src="./assets/EJ2/M5-logo-azul.svg" alt="logo">
+                <a href="#"><strong>HOME</strong></a>
+                <a href="#">CONTACTO</a>
+            </div>
+
+            <p class="p_1">¿Querés que nos contactamos con vos?</p>
+            <p class="p_2">Dejanos tu consulta:</p>
+
+            <label for="name">Nombre completo <span style="color: red;">*</span></label>
+            <input 
+                type="text" 
+                name="name" 
+                id="name"
+                required>
+
+            <label for="email">Email <span style="color: red;">*</span></label>
+            <input 
+                type="email" 
+                name="email" 
+                id="email"
+                placeholder="user@example.com"
+                required>
+
+            <label for="Comentario">Comentario <span style="color: red;">*</span></label>
+            <textarea name="Comentario" id="Comentario" ></textarea>
+
+            <button type="reset" class="btn btn-reset">Resetear</button>
+            <button class="btn btn-enviar">Enviar</button>
+        </form>
+    </main>
+</body>
+</html>

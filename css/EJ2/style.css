@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --fuente-titulo: 'Roboto Slab', serif;
+    --fuente-principal: 'Roboto', sans-serif;
+
+    --dim-titulo: 45px;
+    --dim-parrafo: 30px;
+    --dim-boton: 32px;
+
+    --color-titulo: #2c00cc;
+    --color-principal: #04146c;
+    --color-boton-reset: #f98500;
+    --color-boton-enviar: #2c00cc;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    margin-top: 50px;
+}
+
+.formulario {
+    width: 42%;
+    margin: auto;
+    height: 650px;
+    border: 1px solid rgb(177, 169, 169);
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+.nav-container {
+    height: 50px;
+    font-family: var(--fuente-principal);
+    font-weight: 400;
+    color: var(--color-principal);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-container a {
+    text-decoration: none;
+}
+
+.nav-container img {
+    width: 5%;
+}
+
+.formulario .p_1 {
+    font-family: var(--dim-titulo);
+    font-weight: 700;
+    font-size: var(--dim-titulo);
+    color: var(--color-titulo);
+    margin: 20px 0 20px 0;
+}
+
+.formulario .p_2 {
+    font-family: var(--fuente-principal);
+    font-weight: 400;
+    font-size: var(--dim-parrafo);
+    color: var(--color-principal);
+    margin: 20px 0px 20px 0px;
+}
+
+.formulario label {
+    display: block;
+    font-family: var(--fuente-principal);
+    font-weight: 700;
+    font-size: var(--dim-parrafo);
+    color: var(--color-principal);
+}
+
+.formulario input {
+    width: 500px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.formulario textarea {
+    width: 500px;
+    height: 100px;
+    display: block;
+    margin-top: 10px;
+}
+
+
+.formulario .btn {
+    border-radius: 5px;
+    font-family: var(--fuente-titulo);
+    font-weight: 700;
+    font-size: var(--dim-boton);
+    color: white;
+    padding: 3px;
+    cursor: pointer;
+    margin: 20px 10px 10px 0px;
+}
+
+
+.formulario .btn-reset {
+    background-color: var(--color-boton-reset);
+}
+
+.formulario .btn-enviar {
+    background-color: var(--color-boton-enviar);
+}
