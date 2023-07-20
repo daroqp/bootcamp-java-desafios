@@ -17,3 +17,8 @@ Modulo 3 - Completo
 Modulo 4 - Completo
 
 Modulo 5 - Completo
+
+## Desafio #3 - CSS
+Modulo 1 - Completo
+
+Modulo 2 - Completo
