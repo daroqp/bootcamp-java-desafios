@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+
+@font-face {
+    font-family: 'Coolvetica';
+    src: url('/assets/EJ1/coolvetica\ rg\ \(2\).otf');
+}
+
+:root {
+    --fuente-titulo: 'Coolvetica';
+    --fuente-general: 'Roboto', sans-serif;
+
+    --dim-titulo: 120px;
+    --dim-general: 170px;
+    --dim-parrafo: 24px;
+
+    --color-general: #0a2ff1;
+    --color-parrafo: #04146c;
+    --color-fondo: #eff2ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    margin-top: 50px;
+}
+
+.titulo {
+    font-family: var(--fuente-titulo);
+    font-weight: 400;
+    /* font-size: var(--dim-titulo); */
+    font-size: 120px;
+    color: var(--color-general);
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.item {
+    width: 20%;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-fondo);
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.item img {
+    width: 25%;
+}
+
+.item .apple {
+    width: 18%;
+}
+
+.item h2 {
+    font-family: var(--fuente-general);
+    font-weight: 900;
+    /* font-size: var(--dim-general); */
+    font-size: 30px;
+    color: var(--color-general);
+}
+
+.item p {
+    font-family: var(--fuente-general);
+    font-weight: 400;
+    /* font-size: var(--dim-parrafo); */
+    font-size: 24px;
+    color: var(--color-parrafo);
+}

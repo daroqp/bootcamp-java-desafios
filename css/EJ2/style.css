@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;900&display=swap');
+
+:root {
+    --fuente-general: 'Mulish', sans-serif;
+
+    --dim-h2: 40px;
+    --dim-titulo: 80px;
+    --dim-p: 26px;
+    --dim-boton: 29px;
+
+    --color-general: #0a2ff1;
+    --color-parrafo: #04146c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    font-family: var(--fuente-general);
+    margin-top: 10rem;
+    display: flex;
+    align-items: center;
+}
+
+.text-container {
+    width: 48%;
+    padding-left: 30px;
+}
+
+.subtt {
+    font-weight: 400;
+    font-size: var(--dim-h2);
+    color: var(--color-general);
+    margin-bottom: 30px;
+}
+
+.titulo {
+    font-size: 900;
+    font-size: var(--dim-titulo);
+    color: var(--color-general);
+    margin-bottom: 40px;
+}
+
+.parrafo {
+    font-weight: 400;
+    font-size: var(--dim-p);
+    color: var(--color-parrafo);
+    margin-bottom: 40px;
+}
+
+.btn {
+    font-weight: 700;
+    font-size: var(--dim-boton);
+    color: white;
+    background-color: var(--color-general);
+    height: 70px;
+    width: 400px;
+    cursor: pointer;
+}
+
+.img-container {
+    width: 48%;
+    background-image: url('/assets/EJ2/D2-E3-pattern.png');
+    background-repeat: no-repeat;
+    background-size: 900px 300px;
+    background-position-y: center;
+}
+
+.img-container img {
+    width: 40%;
+    margin-left: 100px;
+}
