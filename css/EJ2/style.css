@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@400;700&display=swap');
+
+:root {
+    --fuente-principal: 'Dongle', sans-serif;
+    --dim-titulo: 60px;
+    --dim-parrafo: 18px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    font-family: var(--fuente-principal);
+}
+
+.titulo {
+    font-weight: 700;
+    font-size: var(--dim-titulo);
+    margin: 20px;
+}
+
+.sect {
+    width: 40%;
+    margin: 20px;
+    padding: 10px;
+    position: relative;
+}
+
+p {
+    font-weight: 400;
+    font-size: var(--dim-parrafo);
+}
+
+.sec_1 {
+    background-color: orange;
+    animation-name: mover;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+.sec_2 {
+    background-color: palegoldenrod;
+    animation-name: mover;
+    animation-duration: 4s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+
+.sec_3 {
+    background-color: pink;
+    animation-name: mover;
+    animation-duration: 4s;
+    animation-delay: 8s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes mover {
+    0% { left: 0px; }
+    100% { left: 800px; }
+}

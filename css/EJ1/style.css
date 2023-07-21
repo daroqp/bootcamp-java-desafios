@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+
+:root {
+    --fuente-principal: 'Roboto', sans-serif;
+
+    --color-fondo-header: white;
+    --color-h2: black;
+
+
+    --dim-titulo: 3em;
+    --dim-h2: 2em;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--fuente-principal);
+}
+
+.header-container {
+    background-image: url('/assets/EJ1/fondo-header.jpg');
+    background-size: cover;
+    height: 200px;
+    position: relative;
+}
+
+.titulo {
+    font-weight: 900;
+    font-size: var(--dim-titulo);
+    position: absolute;
+    background-color: var(--color-fondo-header);
+    left: 30%;
+    top: 30%;
+    mix-blend-mode: screen;
+    border-radius: 10px;
+    padding: 10px 5px;
+}
+
+.container {
+    width: 100%;
+    padding-left: 10px;
+}
+
+.subtitulo {
+    font-weight: 900;
+    font-size: 2em;;
+    color: var(--color-h2);
+    margin: 20px 0 20px;
+}
+
+.parrafo {
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.container img {
+    width: 40%;
+    height: 650px;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.cv {
+    position: relative;
+    background-color: rgb(230, 154, 240);
+    width: 30%;
+    height: 650px;
+    display: none;
+    font-size: 0.9em;
+    border-radius: 10px;
+}
+
+.cv:hover {
+    display: block;
+}
+
+.container img:hover ~ .cv  {
+    display: block;
+}
+
+.cv h1 {
+    padding-top: 40px ;
+    padding-left: 30px 
+}
+
+.cv h2 {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.cv p {
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.cv a {
+    margin-left: 30px;
+}
