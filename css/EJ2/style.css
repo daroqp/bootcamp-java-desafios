@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+
+:root {
+    --fuente-principal: 'Mulish', sans-serif;
+    --color-princial: #0a2ff1;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    font-family: var(--fuente-principal);
+    color: var(--color-princial);
+}
+
+.titulo {
+    font-weight: 700;
+    font-size: 6rem;
+    margin: 2rem;
+    margin-left: 4rem;
+}
+
+.img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+
+.item {
+    position: relative;
+}
+
+.text-box {
+    text-align: center;
+    position:  absolute;
+    left: 15%;
+    bottom: 5%;
+}
+
+.text-box h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    color: white;
+}
+
+.text-box p {
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: white;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .img-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:center;
+    }
+
+    .item {
+        width: 40%;
+    }
+
+    .item img {
+        width: 100%;
+    }
+
+    .text-box h2 {
+        font-size: 1.2rem;
+    }
+
+    .text-box p {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    .img-container {
+        flex-direction: row;
+        justify-content:space-evenly;
+        margin: 2rem;
+    }
+
+    .item {
+        width: 40%;
+    }
+
+    .item img {
+        width: 100%;
+    }
+
+    .text-box {
+        left: 5%;
+    }
+    
+    .text-box h2 {
+        font-size: 2rem;
+    }
+
+    .text-box p {
+        font-size: 1.2rem;
+    }
+}
