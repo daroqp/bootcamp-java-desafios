@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+:root {
+    --fuente-principal: 'Mulish', sans-serif;
+
+    --color-general: #04146c;
+    --color-lineas: #8a9af1;
+    --color-fondo-boton: #5974ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    font-family: var(--fuente-principal);
+}
+
+.etiqueta {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--color-general);
+}
+
+.recordarme {
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: var(--color-general);
+}
+
+.mbtn {
+    font-weight: 700;
+    font-size: 1.5rem;
+    background-color: var(--color-fondo-boton);
+    color: white;
+    border-radius: 5px;
+    width: 150px;
+    height: 50px;
+}

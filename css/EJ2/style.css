@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,900;1,400&display=swap');
+
+:root {
+    --fuente-principal: 'Source Sans 3', sans-serif;
+    --color-general: #04146c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    font-family: var(--fuente-principal);
+}
+
+.titulo {
+    font-weight: 900;
+    font-size: 5rem;
+    color: var(--color-general);
+}
+
+.parrafo {
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: var(--color-general);
+}
+
+.ps {
+    font-style: italic;
+}
+
+.mbtn {
+    font-weight: 400;
+    font-size: 1.1rem;
+    background-color: var(--color-general);
+    color: white;
+    width: 150px;
+    font-variant: small-caps;
+}
