@@ -22,3 +22,12 @@ Modulo 5 - Completo
 Modulo 1 - Completo
 
 Modulo 2 - Completo
+
+Modulo 3 - Completo
+
+## Desafio #4 - Bootstrap
+Modulo 1 - Completo
+
+Modulo 2 - Completo
+
+Modulo 3 - Completo
