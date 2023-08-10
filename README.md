@@ -34,3 +34,5 @@ Modulo 3 - Completo
 
 ## Desafio #5 - Javascript
 Modulo 1 - Completo
+
+Modulo 2 - Completo
