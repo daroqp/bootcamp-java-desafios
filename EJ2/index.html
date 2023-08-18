@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Ejercicio 2</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body {
+                color: white;
+                background-color: black;
+                text-align: center;
+                font-size: 2rem;
+            }
+            table {
+                margin: auto;
+                border-collapse: collapse;
+                width: 60%;
+            }
+            td, th {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+            button {
+                margin-top: 30px;
+                height: 30px;
+                width: 150px;
+                font-size: 1rem;
+            }
+            a {
+                margin-left: 20px;
+                color: coral;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Ofertas de creditos</h1> 
+        <table>
+            <tr id="titulo">
+                <th>Nombre</th>
+                <th>Capital</th>
+                <th>Plazo</th>
+                <th>Tasa</th>
+            </tr>
+            <tr id="Plan 001">
+                <td>Plan 001</td>
+                <td>150000</td>
+                <td>30 días</td>
+                <td>15%</td>
+            </tr>
+            <tr id="Plan 002">
+                <td>Plan 002</td>
+                <td>300000</td>
+                <td>180 días</td>
+                <td>10%</td>
+            </tr>
+            <tr id="Plan 003">
+                <td>Plan 003</td>
+                <td>485000</td>
+                <td>60 días</td>
+                <td>23%</td>
+            </tr>
+        </table>
+        <button type="button" onclick={main()} >Calcular interes</button>
+        <a href="../index.html">Volver</a>
+        <script src="./EJ-2.js"></script>
+    </body>
+</html>
